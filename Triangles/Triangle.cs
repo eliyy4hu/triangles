@@ -1,6 +1,6 @@
 ﻿namespace Triangles;
 
-public struct Triangle
+public class Triangle
 {
     public double A { get; }
     public double B { get; }
@@ -8,7 +8,7 @@ public struct Triangle
 
     public AngleType AngleType { get; }
 
-    public Triangle(double a, double b, double c) : this()
+    public Triangle(double a, double b, double c)
     {
         if (new[] { a, b, c }.Any(x => x <= 0))
         {
